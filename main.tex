@@ -1,0 +1,78 @@
+\documentclass[10pt,twocolumn,letterpaper]{article}
+
+\usepackage{tex/usenix}
+
+\usepackage[dvipsnames,hyperref]{xcolor}
+\usepackage[expansion=alltext,step=1]{microtype}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{subcaption}
+\usepackage{xspace}
+
+\graphicspath{{./figures/}}
+
+\author{
+TBD
+}
+
+\title{
+TBD
+}
+
+\date{}
+
+\lstset{
+  language=C++,
+  frame=top,frame=bottom,
+  basicstyle=\small\normalfont\ttfamily,
+  stepnumber=1,
+  numbersep=10pt,
+  tabsize=2,
+  extendedchars=true,
+  breaklines=true,
+  captionpos=t,
+  numbers=left,
+  numberstyle=\small\color{midgrey},
+  showspaces=false,           % Leerzeichen anzeigen ?
+  showtabs=false,             % Tabs anzeigen ?
+  xleftmargin=17pt,
+  framexleftmargin=17pt,
+  framexbottommargin=5pt,
+  framextopmargin=5pt,
+  showstringspaces=false      % Leerzeichen in Strings anzeigen ?
+}
+
+\DeclareCaptionFormat{listing}%
+{\rule{\dimexpr\columnwidth\relax}{0.4pt}\par\vskip1pt~#1#2#3}
+
+\captionsetup[lstlisting]%
+{format=listing,singlelinecheck=false, margin=0pt, font={sf},labelsep=colon}
+
+% bootstrapping
+
+\input{tex/newcolors}
+\input{tex/newcommands}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+\small
+TODO
+\end{abstract}
+
+% content
+
+\input{sections/introduction}
+
+% references
+
+\bibliographystyle{acm}
+\bibliography{own,programming}
+
+\end{document}

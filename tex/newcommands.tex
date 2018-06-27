@@ -1,0 +1,31 @@
+\newcommand{\doublefig}[8]{%
+ \begin{figure*}[htp]%
+  \ccntering%
+  \subfigure[#1]{\includegraphics[width=.49\columnwidth]{#2}\label{#3}}%
+  \hfill%
+  \subfigure[#4]{\includegraphics[width=.49\columnwidth]{#5}\label{#6}}%
+  \caption{#7}\label{#8}%
+ \end{figure*}%
+}
+
+\newcommand{\singlefig}[3]{%
+ \begin{figure}[htp]%
+  \centering%
+  \includegraphics[width=.9\columnwidth]{#1}%
+  \captionof{figure}{#2}%
+  \label{#3}%
+ \end{figure}%
+}
+
+\newcommand{\todo}[1]{{\color{red}TODO: #1}}
+
+\newcommand{\naive}{na\"{\i}ve\xspace}
+
+\newcommand{\letterbox}[1]{\textcircled{\footnotesize #1}\xspace}
+%\newcommand{\letterbox}[2]{\textcircled{\raisebox{#1 pt}{\footnotesize #2}}\xspace}
+\newcommand{\ca}{\letterbox{a}}
+\newcommand{\cb}{\letterbox{b}}
+\newcommand{\cc}{\letterbox{c}}
+\newcommand{\cd}{\letterbox{d}}
+\newcommand{\ce}{\letterbox{e}}
+\newcommand{\stream}[1]{\underline{\overline{#1}}}
